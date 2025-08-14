@@ -1,0 +1,31 @@
+/flask_facial_auth
+│
+├── /app
+│   ├── __init__.py         # Inicialización de la aplicación
+│   ├── config.py           # Configuraciones
+│   ├── extensions.py       # Extensiones (db, ma, etc.)
+│   │
+│   ├── /models            # Modelos de base de datos
+│   │   ├── __init__.py
+│   │   ├── user.py        # Modelo Usuario
+│   │   └── facial.py      # Modelo FacialFeatures
+│   │
+│   ├── /services         # Lógica de negocio
+│   │   ├── __init__.py
+│   │   ├── auth.py       # Servicio de autenticación
+│   │   └── facial.py     # Servicio de reconocimiento facial
+│   │
+│   ├── /routes           # Endpoints API
+│   │   ├── __init__.py
+│   │   ├── auth.py       # Rutas de autenticación
+│   │   └── facial.py     # Rutas de reconocimiento facial
+│   │
+│   ├── /utils           # Utilidades
+│   │   ├── __init__.py
+│   │   ├── image.py     # Procesamiento de imágenes
+│   │   └── security.py  # Utilidades de seguridad
+│   │
+│   └── schemas.py       # Esquemas Marshmallow
+│
+├── requirements.txt     # Dependencias
+└── run.py              # Punto de entrada
