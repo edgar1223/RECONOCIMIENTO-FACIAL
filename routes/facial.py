@@ -25,7 +25,7 @@ def register_facial():
         facial_feature = FacialService.register_facial_features(
             user_id=user_id,
             image_base64=image_base64,
-            metadata={
+            meta_info ={
                 'registration_type': 'web',
                 'angles': ['frontal']
             }

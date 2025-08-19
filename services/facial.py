@@ -27,7 +27,7 @@ class FacialService:
         facial_feature = FacialFeatures(
             usuario_id=user_id,
             facial_vector=embedding.tolist(),
-            metadata=metadata or {}
+            meta_info =metadata or {}
         )
         
         return facial_feature
