@@ -11,8 +11,6 @@ class Usuario(db.Model):
     fecha_creacion = db.Column(db.DateTime, nullable=False)
     ruta = db.Column(db.String(255), nullable=False)
     contrasena = db.Column(db.String(255), nullable=False)
-    departamento_id = db.Column(db.Integer, db.ForeignKey('api_departamento.idDep'))
     fcm_token = db.Column(db.Text)
     
-    departamento = db.relationship('Departamento', backref=db.backref('usuarios', lazy=True))
     facial_features = db.relationship('FacialFeatures', backref='usuario', lazy=True)

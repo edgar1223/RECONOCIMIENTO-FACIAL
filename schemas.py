@@ -1,6 +1,6 @@
-from .extensions import ma
-from .models.user import Usuario
-from .models.facial import FacialFeatures
+from extensions import ma
+from models.user import Usuario
+from models.facial import FacialFeatures
 
 class UsuarioSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
